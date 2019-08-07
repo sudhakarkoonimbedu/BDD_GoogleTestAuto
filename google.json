@@ -1,0 +1,101 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8298887506,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Perform SmokeTest On Google Application",
+        "description": "",
+        "id": "smoketest-google-application;perform-smoketest-on-google-application;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 9158837,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 308742670,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigate to the Google application",
+            "match": {
+              "location": "StepDefinitionsSearchGoogle.user_Access_Google_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9752923665,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "perform search",
+            "match": {
+              "location": "StepDefinitionsSearchGoogle.user_Search_For_Existing_Content(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "search_value",
+                  "Protractor using javascript"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 193288826,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 8,
+            "name": "Search results should be displayed",
+            "match": {
+              "location": "StepDefinitionsSearchGoogle.Google_Search_Results_Table()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "SmokeTest Google application",
+    "description": "",
+    "id": "smoketest-google-application",
+    "keyword": "Feature",
+    "uri": "features/Google/Google.feature"
+  }
+]

@@ -1,0 +1,189 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 30461833378,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "StepDefinitionsSearchDrug.user_Access_Hybrid_Desktop_Application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  "dt79655"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  "gs12345"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  "DR1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 15871918235,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Perform SmokeTest On Drug Application",
+        "description": "",
+        "id": "smoketest-hybrid-desktop-drug-\u0026-perform-search;perform-smoketest-on-drug-application;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1360739,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3564605997,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects the application from menu in Landing Page",
+            "match": {
+              "location": "StepDefinitionsSearchDrug.user_Selects_Application_From_Menu_Options(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "menu",
+                  "Miscellaneous-\u003eDrug"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24230790421,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User search for the existing Drug with details",
+            "match": {
+              "location": "StepDefinitionsSearchDrug.user_Search_For_Existing_Drug(String,String\u003e)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "search_field",
+                  "Specific Therapeutic Class Code"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "search_value",
+                  "Z2D"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4100500999,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Drug Search results table should be displayed",
+            "match": {
+              "location": "StepDefinitionsSearchDrug.Drug_Search_Results_Table()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 453034433,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click on the first DrugID from search results",
+            "match": {
+              "location": "StepDefinitionsSearchDrug.click_On_First_Drug_ID()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4633448538,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 18,
+            "name": "Drug Header details should be displayed",
+            "match": {
+              "location": "StepDefinitionsSearchDrug.user_Verify_Drug_Header_Details()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "SmokeTest Hybrid Desktop Drug \u0026 perform Search",
+    "description": "",
+    "id": "smoketest-hybrid-desktop-drug-\u0026-perform-search",
+    "keyword": "Feature",
+    "uri": "features/Drug/Drug.feature"
+  }
+]

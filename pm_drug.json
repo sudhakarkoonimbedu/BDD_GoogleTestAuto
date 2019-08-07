@@ -1,0 +1,189 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 31888306366,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "StepDefinitionsSearchPM_RAR.user_Access_Hybrid_Desktop_Application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  "dt79655"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  "gsv1234"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  "DR1"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 22502406228,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Perform SmokeTest On PM_RAR Application",
+        "description": "",
+        "id": "smoketest-hybrid-desktop-pm-rar-\u0026-perform-search;perform-smoketest-on-pm-rar-application;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1836578,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 35399455272,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects the application from menu in Landing Page",
+            "match": {
+              "location": "StepDefinitionsSearchPM_RAR.user_Selects_Application_From_Menu_Options(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "menu",
+                  "Provider-\u003ePharmacy Maintenance"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11408045280,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User search for the existing PM_RAR with details",
+            "match": {
+              "location": "StepDefinitionsSearchPM_RAR.user_Search_For_Existing_PM_RAR(String,String\u003e)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "mcs",
+                  "Humana"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "type",
+                  "Remit and Reconciliation"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2138494942,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "PM_RAR Search results table should be displayed",
+            "match": {
+              "location": "StepDefinitionsSearchPM_RAR.PM_RAR_Search_Results_Table()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 332492134,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click on the first PM_RARID from search results",
+            "match": {
+              "location": "StepDefinitionsSearchPM_RAR.click_On_First_PM_RAR_ID()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10376668369,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 18,
+            "name": "PM_RAR Header details should be displayed",
+            "match": {
+              "location": "StepDefinitionsSearchPM_RAR.user_Verify_PM_RAR_Header_Details()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "SmokeTest Hybrid Desktop PM_RAR \u0026 perform Search",
+    "description": "",
+    "id": "smoketest-hybrid-desktop-pm-rar-\u0026-perform-search",
+    "keyword": "Feature",
+    "uri": "features/PM_RAR/PM_RAR.feature"
+  }
+]
