@@ -13,7 +13,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 					"classpath:DSTPS.Automation.Google_Automation.pages",
 					"classpath:DSTPS.Automation.Google_Automation.runners",
 					"classpath:DSTPS.Automation.Google_Automation.steps"},
-			plugin =  {"pretty","html:target/html", "json:target/google.json", "rerun:src/test/resources/rerun.txt"},
+			plugin =  {"pretty","html:target/html", "json:google.json", "rerun:src/test/resources/rerun.txt"},
 			strict=true
 )
 
