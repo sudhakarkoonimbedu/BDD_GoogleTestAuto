@@ -6,7 +6,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 //@RunWith(CucumberRunner.class)
 @CucumberOptions(
-		features = {"classpath:features/Google/" }, 
+		features = {"classpath:features/Google/Google.feature" }, 
 			tags = {"@SmokeTest"}, 
 			glue= {"classpath:DSTPS.Automation.Google_Automation.stepDefinitions",
 					"classpath:DSTPS.Automation.Apps.common",
